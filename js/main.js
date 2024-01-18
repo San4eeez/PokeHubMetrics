@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     getResponse();
 });
 
+
+
+
 async function getResponse() {
     try {
         let response = await fetch('http://localhost:8080/api/user');
@@ -21,9 +24,16 @@ function displayData(data) {
     data.forEach(item => {
         const row = document.createElement('tr');
 
+
         const idCell = document.createElement('td');
         idCell.textContent = item.id;
         row.appendChild(idCell);
+
+        const ImageCell = document.createElement('img');
+        ImageCell.src = item.link;
+        row.appendChild(ImageCell);
+
+
 
         const nameCell = document.createElement('td');
         nameCell.textContent = item.name;
