@@ -1,15 +1,38 @@
+
+body{
+    background-color: black;
+}
+
 table {
+    color: red;
     border-collapse: collapse;
     width: 50%;
     margin: 20px;
 }
 th, td {
+    color: red;
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 th {
-    background-color: #f2f2f2;
+    background-color: black;
+    color: white;
+}
+
+.pokemonStoreImg {
+   width: auto;
+    max-height: 80%;
+}
+
+.tablichka{
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.reklama{
+    margin: 2%;
 }
 
 
